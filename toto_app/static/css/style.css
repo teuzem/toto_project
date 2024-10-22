@@ -1,0 +1,88 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond de la page */
+}
+
+header {
+    background: #35424a; /* Couleur de fond de l'en-tête */
+    color: #ffffff; /* Couleur du texte de l'en-tête */
+    padding: 10px 20px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Centrer le texte */
+}
+
+header h1 {
+    margin: 0; /* Supprime la marge par défaut du h1 */
+}
+
+nav a {
+    color: #ffffff; /* Couleur des liens de navigation */
+    margin: 0 15px; /* Espacement entre les liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+
+main {
+    padding: 20px; /* Espacement intérieur du contenu principal */
+}
+
+table {
+    width: 100%; /* La table occupe toute la largeur */
+    border-collapse: collapse; /* Fusionne les bordures */
+    margin-top: 20px; /* Marge supérieure pour espacer de l'en-tête */
+}
+
+th, td {
+    padding: 10px; /* Espacement intérieur des cellules */
+    border: 1px solid #ddd; /* Bordure des cellules */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+th {
+    background-color: #35424a; /* Couleur de fond des en-têtes de colonne */
+    color: white; /* Couleur du texte des en-têtes */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur de fond des lignes paires */
+}
+
+button {
+    background-color: #35424a; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte des boutons */
+    border: none; /* Supprime la bordure par défaut */
+    padding: 10px 15px; /* Espacement intérieur des boutons */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+button:hover {
+    background-color: #45a049; /* Change la couleur au survol */
+}
+
+form {
+    margin-top: 20px; /* Marge supérieure pour espacer des éléments précédents */
+}
+
+form input, form textarea {
+    width: 100%; /* Champs de formulaire occupent toute la largeur */
+    padding: 10px; /* Espacement intérieur des champs */
+    margin: 5px 0; /* Marge pour espacer les champs */
+    border: 1px solid #ccc; /* Bordure des champs */
+    border-radius: 4px; /* Coins arrondis des champs */
+}
+
+footer {
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 10px; /* Espacement intérieur du pied de page */
+    background-color: #35424a; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    position: relative; /* Position relative pour le positionnement */
+    bottom: 0; /* Fixe le pied de page en bas */
+    width: 100%; /* Occupe toute la largeur */
+}

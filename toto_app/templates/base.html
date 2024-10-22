@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toto App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Lien vers le fichier CSS -->
+    <script src="{% static 'js/script.js' %}"></script> <!-- Lien vers le fichier JavaScript -->
+</head>
+<body>
+    <header>
+        <h1>Toto App</h1>
+        <nav>
+            <a href="{% url 'record_list' %}">Accueil</a>
+            <a href="{% url 'record_create' %}">Ajouter un enregistrement</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %} <!-- Bloc pour le contenu spécifique à chaque page -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Toto App</p>
+    </footer>
+</body>
+</html>

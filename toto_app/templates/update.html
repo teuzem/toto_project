@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Modifier l'Enregistrement : {{ record.title }}</h2>
+<form method="post"> <!-- Envoie les données en POST -->
+    {% csrf_token %} <!-- Protection CSRF -->
+    {{ form.as_p }} <!-- Affiche le formulaire -->
+    <button type="submit">Mettre à jour</button>
+</form>
+<a href="{% url 'record_detail' record.pk %}">Annuler</a>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %} <!-- Hérite du modèle de base -->
+
+{% block content %}
+<h2>Liste des Enregistrements</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %} <!-- Boucle sur chaque enregistrement -->
+        <tr>
+            <td>{{ record.title }}</td>
+            <td>{{ record.description|truncatewords:10 }}</td> <!-- Affiche les 10 premiers mots -->
+            <td>
+                <a href="{% url 'record_detail' record.pk %}">Voir</a>
+                <a href="{% url 'record_update' record.pk %}">Modifier</a>
+                <a href="{% url 'record_delete' record.pk %}">Supprimer</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
